@@ -11,7 +11,7 @@ outputFile=$outputDirectory/sbi-forex-rate-card-`date +%Y%m%d`-`date +%H%M%S`.pd
 curl --location 'https://sbi.co.in/documents/16012/1400784/FOREX_CARD_RATES.pdf' --output $outputFile
 
 #Do git commit
-#git add $outputFile
-#git commit "Sbi Forex Rate Card for `date +%Y%m%d`"
-#git push origin master
+git add $outputFile
+git commit -m "Sbi Forex Rate Card for `date +%Y%m%d`"
+git push origin master
 
